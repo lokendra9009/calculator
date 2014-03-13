@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".calc").on('click',function(event) {
+				event.preventDefault();
+				/* Act on the event */
+				$("#disp").text($("#btnone").val());
+			});
+		});
+	</script>
+	
+</head>
+<body>
+<div id="maincontent">
+	<div id="firstseg">
+		<label id="disp"></label>
+	</div>
+	<div id="secondseg">
+		<input type="button" value="1" id="btnone" class="calcbtn">
+		<input type="button" value="2" id="btntwo" class="calcbtn">
+		<input type="button" value="3" id="btnthree" class="calcbtn">
+	</div>
+	<div id="thirdseg">
+		<input type="button" value="4" id="btnfourth" class="calcbtn">
+		<input type="button" value="5" id="btnfifth" class="calcbtn">
+		<input type="button" value="6" id="btnsixth" class="calcbtn">
+	</div>
+	<div id="fourthseg">
+		<input type="button" value="7" id="btnseventh" class="calcbtn">
+		<input type="button" value="8" id="btneighth" class="calcbtn">
+		<input type="button" value="9" id="btnnineth" class="calcbtn">
+		
+	</div>
+	<div id="fifthseg">
+		<input type="button" value="+" id="btnadd" class="operation">
+		<input type="button" value="0" id="btnzero" class="calcbtn">
+		<input type="button" value="-" id="btnsub" class="operation">
+		
+	</div>
+</div>
+</body>
+</html>
